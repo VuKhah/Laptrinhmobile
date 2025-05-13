@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:backgroundTint="#B8B519"
+        android:backgroundTint="#808080"
 
         android:layout_alignParentTop="true"
         android:background="#F6F3EF"
@@ -91,7 +91,7 @@ android:layout_marginBottom="10dp"
 
 <ImageView
     android:layout_width="match_parent"
-    android:background="@drawable/img_3"
+    android:background="@drawable/main"
 
     android:layout_height="200dp">
 

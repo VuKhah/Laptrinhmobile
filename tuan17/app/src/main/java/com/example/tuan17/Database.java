@@ -106,7 +106,7 @@ public class Database extends SQLiteOpenHelper {
         Cursor cursor = null;
 
         try {
-            String query = "SELECT * FROM Dathang";
+            String query = "SELECT * FROM Dathang ORDER BY ngaydathang DESC";
             cursor = db.rawQuery(query, null); // Cần đối số thứ 2 là null
 
             if (cursor != null && cursor.moveToFirst()) {

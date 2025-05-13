@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:backgroundTint="#D1D804"
+        android:backgroundTint="#808080"
         android:layout_marginBottom="10dp"
         android:layout_alignParentTop="true"
         android:background="#F6F3EF"

@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:text="Tên sản phẩm"
                 android:textAllCaps="true"
-                android:textColor="#3AC315"
+                android:textColor="#000000"
                 android:textSize="18sp" />
 
             <LinearLayout

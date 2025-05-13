@@ -7,24 +7,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F6F3EF"
+        android:background="#808080"
         android:padding="16dp"
         android:gravity="center"
-        android:backgroundTint="#B8B519"
+        android:backgroundTint="#808080"
         android:text="GIỎ HÀNG"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:id="@+id/tieude"
         android:textStyle="bold"
         android:layout_alignParentTop="true"/>
-    <ImageView
-
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/back"
-        android:src="@drawable/ql"
-        android:layout_width="40dp"
-        android:layout_height="40dp"></ImageView>
 
     <ListView
         android:layout_marginTop="5dp"
@@ -72,9 +64,9 @@
             android:id="@+id/btnthanhtoan"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
-           android:layout_marginLeft="20dp"
+            android:layout_marginLeft="20dp"
             android:layout_width="130dp"
-android:backgroundTint="#FF0505"
+            android:backgroundTint="#808080"
             android:text="Thanh Toán"
             android:layout_height="50dp"></Button>
     </LinearLayout>

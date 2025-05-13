@@ -6,7 +6,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_1"
+    android:background="@drawable/log"
     tools:context=".MainActivity">
 
 
@@ -20,95 +20,96 @@
         android:background="@drawable/edittext">
 
         <LinearLayout
-            android:background="#FFFFFF"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="357dp"
             android:layout_gravity="center_horizontal"
+            android:background="#C0C0C0"
+            android:orientation="vertical"
             android:padding="24dp">
 
             <TextView
+                android:id="@+id/loginText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Đăng Kí "
-                android:id="@+id/loginText"
-                android:textSize="40sp"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="#FF0033"/>
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/tdn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/tdn"
-                android:background="@drawable/edittext"
+                android:layout_marginTop="10dp"
 
+                android:background="@drawable/edittext"
                 android:drawablePadding="8dp"
                 android:hint="Username"
-                android:textColorHint="#aaa"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="10dp"/>
+                android:textColorHint="#aaa" />
 
             <EditText
+                android:id="@+id/mk"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/mk"
-                android:background="@drawable/edittext"
+                android:layout_marginTop="10dp"
 
+                android:background="@drawable/edittext"
                 android:drawablePadding="8dp"
                 android:hint="Password"
-                android:padding="8dp"
-                android:textColorHint="#aaa"
                 android:inputType="textPassword"
+                android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="10dp"/>
+                android:textColorHint="#aaa" />
 
             <EditText
+                android:id="@+id/nhaplaimk"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/nhaplaimk"
-                android:background="@drawable/edittext"
+                android:layout_marginTop="10dp"
 
+                android:background="@drawable/edittext"
                 android:drawablePadding="8dp"
                 android:hint="Confirm Password"
-                android:padding="8dp"
-                android:textColorHint="#aaa"
                 android:inputType="textPassword"
+                android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="10dp"/>
+                android:textColorHint="#aaa" />
 
             <Spinner
                 android:id="@+id/quyen"
-                android:layout_marginLeft="1dp"
-                android:layout_marginTop="0dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginBottom="0dp" />
 
             <Button
+                android:id="@+id/btnDangki"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/btnDangki"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="#808080"
                 android:text="Đăng kí"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="#FF0000"
-                app:cornerRadius="20dp"/>
+                app:cornerRadius="20dp" />
+
             <TextView
+                android:id="@+id/ql"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Quay Lại?"
-                android:id="@+id/ql"
-                android:textSize="12sp"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="#007CFF"/>
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

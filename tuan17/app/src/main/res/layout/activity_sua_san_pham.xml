@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
 
-    android:background="#FFDD00"
+    android:background="#CCCCCC"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -31,7 +31,7 @@
                 android:textSize="20sp"
 
                 android:textStyle="bold"
-                android:textColor="#001BC5"
+                android:textColor="#000000"
                 android:layout_marginBottom="5dp" />
 
             <EditText
@@ -165,14 +165,15 @@ android:layout_marginLeft="26dp"
                     android:textColor="@color/black"
                     android:textColorHighlight="@color/cardview_dark_background"
                     android:layout_marginTop="5dp"/>
+
                 <Button
-                    android:layout_width="100dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Chọn ảnh"
-                    android:backgroundTint="#78F32C"
-                    android:layout_marginLeft="30dp"
                     android:id="@+id/btnAddImg"
-                    android:layout_height="50dp"></Button>
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#808080"
+                    android:text="Chọn ảnh"></Button>
             </LinearLayout>
 
 

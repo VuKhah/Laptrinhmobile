@@ -10,21 +10,13 @@
         android:background="#F6F3EF"
         android:padding="16dp"
         android:gravity="center"
-        android:backgroundTint="#B8B519"
+        android:backgroundTint="#808080"
         android:text="CHI TIẾT SẢN PHẨM"
     android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:id="@+id/tieude"
         android:textStyle="bold"
         android:layout_alignParentTop="true"/>
-    <ImageView
-
-        android:layout_marginLeft="1dp"
-android:layout_marginTop="10dp"
-        android:id="@+id/back"
-        android:src="@drawable/ql"
-        android:layout_width="40dp"
-        android:layout_height="40dp"></ImageView>
 
     <!-- ScrollView cho nội dung -->
     <ScrollView
@@ -54,7 +46,7 @@ android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="16dp"
                 android:textAllCaps="true"
-                android:textColor="#46C501"
+                android:textColor="#333333"
                 android:textSize="24sp"
                 android:text="Tên Sản Phẩm"
                 android:textStyle="bold"/>
@@ -212,7 +204,7 @@ android:layout_marginTop="10dp"
                     android:drawableLeft="@drawable/gio"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:backgroundTint="#FF2626"
+                    android:backgroundTint="#CCCCCC"
                    />
 
                 <Button
@@ -225,7 +217,7 @@ android:layout_marginTop="10dp"
                     android:drawableLeft="@drawable/dat"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:backgroundTint="#FFDD00"/>
+                    android:backgroundTint="#CCCCCC"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

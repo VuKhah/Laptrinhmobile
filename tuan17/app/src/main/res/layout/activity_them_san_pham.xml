@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
 
-    android:background="#FFD400"
+    android:background="#CCCCCC"
     android:orientation="vertical">
     <ImageButton
         android:id="@+id/imgback"
@@ -40,7 +40,7 @@
                 android:textSize="20sp"
 
                 android:textStyle="bold"
-                android:textColor="#001BC5"
+                android:textColor="#000000"
                 android:layout_marginBottom="5dp" />
 
 
@@ -67,7 +67,7 @@
                 android:layout_marginBottom="2dp"
                 android:drawablePadding="8dp"
                 android:inputType="number"
-                android:hint="Đon giá ( VNĐ)"
+                android:hint="Đơn giá ( VNĐ)"
                 android:textColorHint="#aaa"
                 android:padding="8dp"
                 android:textColor="@color/black"
@@ -172,7 +172,7 @@
                     android:layout_width="100dp"
                     android:layout_marginTop="10dp"
                     android:text="Chọn ảnh"
-                    android:backgroundTint="#78F32C"
+                    android:backgroundTint="#CCCCCC"
                     android:layout_marginLeft="30dp"
                     android:id="@+id/btnAddImg"
                     android:layout_height="50dp"></Button>
@@ -188,7 +188,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:layout_marginTop="1dp"
-                android:backgroundTint="#FF1500"
+                android:backgroundTint="#808080"
                 app:cornerRadius = "20dp"/>
 
         </LinearLayout>

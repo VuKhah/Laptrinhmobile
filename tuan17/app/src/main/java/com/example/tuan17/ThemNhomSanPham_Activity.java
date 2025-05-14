@@ -96,7 +96,19 @@ public class ThemNhomSanPham_Activity extends AppCompatActivity {
     }
     // Mở dialog chọn hình ảnh từ drawable
     private void openDrawableImagePicker() {
-        final String[] imageNames = {"vest", "aococtay", "aolen", "dahoi", "giaydong", "giaythethao", "khoac1", "quanau", "quantat", "vay", "somi"};
+        final String[] imageNames = {
+                "nhom_caocap",
+                "nhom_mini",
+                "nhom_mualehoi",
+                "nhom_nhenhang",
+                "nhom_phongngu",
+                "nhom_quatang",
+                "nhom_thiennhien",
+                "nhom_thugian",
+                "nhom_tinhdau",
+                "nhom_tinhyeu",
+                "nhom_trangtri"
+        };
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Chọn ảnh từ drawable");

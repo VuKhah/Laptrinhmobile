@@ -78,7 +78,7 @@ public class ChiTietSanPham_Adapter extends BaseAdapter {
         ImageButton sua = viewtemp.findViewById(R.id.imgsua);
         ImageButton xoa = viewtemp.findViewById(R.id.imgxoa);
 
-        // Hiển thị thông tin bác sĩ
+        // Hiển thị thông tin sản phẩm
         masp.setText(tt.getMasp());
         tensp.setText(tt.getTensp());
         dongia.setText(String.valueOf(tt.getDongia())); // Chuyển đổi Float thành String
@@ -87,7 +87,7 @@ public class ChiTietSanPham_Adapter extends BaseAdapter {
         soluongkho.setText(String.valueOf(tt.getSoluongkho())); // Chuyển đổi Integer thành String
         manhomsanpham.setText(tt.getMansp());
 
-        // Hiển thị ảnh bác sĩ
+        // Hiển thị ảnh sản phẩm
         byte[] anhByteArray = tt.getAnh();
         if (anhByteArray != null && anhByteArray.length > 0) {
             Bitmap imganhbs = BitmapFactory.decodeByteArray(anhByteArray, 0, anhByteArray.length);

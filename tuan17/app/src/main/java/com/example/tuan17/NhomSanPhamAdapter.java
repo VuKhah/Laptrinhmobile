@@ -197,7 +197,20 @@ public class NhomSanPhamAdapter extends BaseAdapter {
     }
 
     private void openDrawableImagePicker(ImageView imgnsp) {
-        final String[] imageNames = {"vest", "aococtay", "aolen", "dahoi", "giaydong", "giaythethao", "khoac1", "quanau", "quantat", "vay", "somi"};
+        final String[] imageNames = {
+                "nhom_caocap",
+                "nhom_mini",
+                "nhom_mualehoi",
+                "nhom_nhenhang",
+                "nhom_phongngu",
+                "nhom_quatang",
+                "nhom_thiennhien",
+                "nhom_thugian",
+                "nhom_tinhdau",
+                "nhom_tinhyeu",
+                "nhom_trangtri"
+        };
+
 
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("Chọn ảnh từ drawable");

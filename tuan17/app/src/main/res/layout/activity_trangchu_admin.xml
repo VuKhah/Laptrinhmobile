@@ -100,23 +100,21 @@
                 android:textSize="13sp"
                 android:textStyle="bold" />
 
+
+            <!-- Nội dung chính của ứng dụng -->
             <GridView
                 android:id="@+id/grv2"
-                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:columnCount="2"
                 android:horizontalSpacing="5dp"
                 android:numColumns="5"
-                android:columnCount="2"
 
                 android:stretchMode="columnWidth"
                 android:verticalSpacing="5dp" />
 
-
-
-
-            <!-- Nội dung chính của ứng dụng -->
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"

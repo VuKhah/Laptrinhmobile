@@ -125,7 +125,7 @@ public class Nhomsanpham_admin_Actvity extends AppCompatActivity {
                 mangNSP.add(new NhomSanPham(maso, tennsp, blob));
             } while (cursor.moveToNext());
         } else {
-            Toast.makeText(this, "Null load dữ liuej", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Null load dữ liệu", Toast.LENGTH_SHORT).show();
         }
 
         adapter.notifyDataSetChanged();

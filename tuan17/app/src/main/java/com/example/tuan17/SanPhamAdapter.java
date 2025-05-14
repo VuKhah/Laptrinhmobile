@@ -99,7 +99,7 @@ public  class SanPhamAdapter extends BaseAdapter {
         ImageButton sua = viewtemp.findViewById(R.id.imgsua);
         ImageButton xoa = viewtemp.findViewById(R.id.imgxoa);
 
-        // Hiển thị thông tin bác sĩ
+        // Hiển thị thông tin sản phẩm
         masp.setText(tt.getMasp());
         tensp.setText(tt.getTensp());
         dongia.setText(String.valueOf(tt.getDongia())); // Chuyển đổi Float thành String
@@ -108,7 +108,7 @@ public  class SanPhamAdapter extends BaseAdapter {
         soluongkho.setText(String.valueOf(tt.getSoluongkho())); // Chuyển đổi Integer thành String
         manhomsanpham.setText(tt.getMansp());
 
-        // Hiển thị ảnh bác sĩ
+        // Hiển thị ảnh sản phẩm
         byte[] anhByteArray = tt.getAnh();
         if (anhByteArray != null && anhByteArray.length > 0) {
             Bitmap imganhbs = BitmapFactory.decodeByteArray(anhByteArray, 0, anhByteArray.length);
@@ -124,7 +124,7 @@ public  class SanPhamAdapter extends BaseAdapter {
         xoa.setOnClickListener(v -> {
             new AlertDialog.Builder(parent.getContext())
                     .setTitle("Xác nhận")
-                    .setMessage("Bạn có chắc chắn muốn xóa bác sĩ này?")
+                    .setMessage("Bạn có chắc chắn muốn xóa sản phẩm này?")
                     .setPositiveButton("Có", (dialog, which) -> {
                         SQLiteDatabase db = database.getWritableDatabase();
                         int rowsAffected = db.delete("sanpham", "masp = ?", new String[]{tt.getMasp()});
@@ -197,7 +197,7 @@ public  class SanPhamAdapter extends BaseAdapter {
 
         return viewtemp;
     }
-    // Hàm hiển thị dialog sửa thông tin bác sĩ
+    // Hàm hiển thị dialog sửa thông tin sản phẩm
     private void showEditDialog(SanPham tt) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         View dialogView = LayoutInflater.from(context).inflate(R.layout.activity_sua_san_pham, null);
@@ -308,7 +308,19 @@ public  class SanPhamAdapter extends BaseAdapter {
 
     // Phương thức để mở hộp thoại chọn ảnh từ drawable
     private void openDrawableImagePicker(ImageView imgBacSi) {
-        final String[] imageNames = {"vest1","vest2","vest3", "aococ1","aococ2","aococ3", "len1","len2","len3", "dahoi1","dahoi2","dahoi3", "giay1","giay2","giay3","giay4","giay5", "giaythethao", "aosomi1","aosomi2","aosomi3", "quan1","quan2", "quan3",  "vay1","vay2","vay3"};
+        final String[] imageNames = {
+                "sp_caocap01", "sp_caocap02", "sp_caocap03",
+                "sp_mini01", "sp_mini02",
+                "sp_mualehoi01", "sp_mualehoi02",
+                "sp_nhenhang01",
+                "sp_phongngu01",
+                "sp_quatang01", "sp_quatang02", "sp_quatang03", "sp_quatang04",
+                "sp_thiennhien", "sp_thiennhien01", "sp_thiennhien02", "sp_thiennhien03",
+                "sp_thugian01",
+                "sp_tinhdau01",
+                "sp_tinhyeu01", "sp_tinhyeu02", "sp_tinhyeu03",
+                "sp_trangtri01", "sp_trangtri02"
+        };
 
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("Chọn ảnh từ drawable");

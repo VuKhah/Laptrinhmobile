@@ -1,0 +1,31 @@
+--
+-- File generated with SQLiteStudio v3.4.17 on Tue May 13 19:36:08 2025
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: android_metadata
+CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT);
+
+-- Table: bacsi
+CREATE TABLE IF NOT EXISTS bacsi(mabs VARCHAR(20) PRIMARY KEY, tenbs NVARCHAR(50), gioitinh NVARCHAR(20), namsinh TEXT, sdt VARCHAR(15), chuyennganh NVARCHAR(200), tendn VARCHAR(20) NOT NULL, anh BLOB);
+
+-- Table: Chitietdonhang
+CREATE TABLE IF NOT EXISTS Chitietdonhang (id_chitiet INTEGER PRIMARY KEY AUTOINCREMENT, id_dathang INTEGER, masp INTEGER, soluong INTEGER, dongia REAL, anh TEXT, FOREIGN KEY(id_dathang) REFERENCES Dathang(id_dathang));
+
+-- Table: Dathang
+CREATE TABLE IF NOT EXISTS Dathang (id_dathang INTEGER PRIMARY KEY AUTOINCREMENT, tenkh TEXT, diachi TEXT, sdt TEXT, tongthanhtoan REAL, ngaydathang DATETIME DEFAULT CURRENT_TIMESTAMP);
+
+-- Table: nhomsanpham
+CREATE TABLE IF NOT EXISTS nhomsanpham(maso INTEGER PRIMARY KEY AUTOINCREMENT, tennsp NVARCHAR(200), anh BLOB);
+
+-- Table: sanpham
+CREATE TABLE IF NOT EXISTS sanpham(masp INTEGER PRIMARY KEY AUTOINCREMENT, tensp NVARCHAR(200),dongia FLOAT,mota TEXT,ghichu TEXT,soluongkho INTEGER,maso INTEGER , anh BLOB);
+
+-- Table: taikhoan
+CREATE TABLE IF NOT EXISTS taikhoan(tendn VARCHAR(20) PRIMARY KEY, matkhau VARCHAR(50), quyen VARCHAR(50));
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;

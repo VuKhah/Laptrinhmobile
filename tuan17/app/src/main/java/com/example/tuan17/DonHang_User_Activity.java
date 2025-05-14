@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -57,15 +58,19 @@ public class DonHang_User_Activity extends AppCompatActivity {
         // Tạo bảng nếu chưa tồn tại
         createTableIfNotExists();
 
-        // Lấy tên đăng nhập từ Intent
-        String tenDN = getIntent().getStringExtra("tendn");
+        // Lấy tendn từ SharedPreferences
+        SharedPreferences sharedPre = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        String tenDN = sharedPre.getString("tendn", null);
 
 // Kiểm tra giá trị tenDN
         if (tenDN == null || tenDN.isEmpty()) {
+
+
             Toast.makeText(this, "Tên đăng nhập không hợp lệ!", Toast.LENGTH_SHORT).show();
             finish(); // Kết thúc activity nếu không có tên đăng nhập
             return;
         }
+        else {}
 
         loadDonHang(tenDN); // Gọi phương thức loadDonHang với tenDN
 

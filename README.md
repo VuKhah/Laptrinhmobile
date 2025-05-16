@@ -4,7 +4,7 @@
 
 ---
 
- 🔐 Xác thực người dùng
+### 🔐 Xác thực người dùng
 
 - **Đăng ký tài khoản:** Người dùng mới có thể tạo tài khoản, kiểm tra hợp lệ các trường: họ tên, mật khẩu, xác nhận mật khẩu.  
 - **Đăng nhập:** Đăng nhập bằng tên tài khoản và mật khẩu. Hỗ trợ ghi nhớ đăng nhập và truy cập chức năng quên mật khẩu.  
